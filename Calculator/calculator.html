@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Calculator</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Blessong Tayedzerwa">
+	<meta name="Keywords" content="Digital Calculator, Calculator, Digital Application">
+	<meta name="Description" content="Digital Calculation">
+	<meta name="viewport" content="width=device-width" init-scale="1.0">
+     <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../css_frameworks/bootstrap.css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../css_frameworks/bootstrap.css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css_frameworks/bootstrap.css/bootstrap/css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="../../css_frameworks/bootstrap.css/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css_frameworks/bootstrap.css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+     <link rel="stylesheet" type="text/css" href="normalize.css">
+	<script type="text/javascript" src="calculator.js"></script>
+</head>
+
+<body>
+     
+     <div id="flex-container">
+          <div id="userInterface">
+          <form name="frm">
+               <input id="screen" name="screen"><br>
+               <input  class="btn btn-info" id="btn1" type="button" name="1" value="1" onclick="run1()">
+               <input  class="btn btn-info" id="btn2" type="button" name="2" value="2" onclick="run2()">
+               <input  class="btn btn-info" id="btn3" type="button" name="3" value="3" onclick="run3()">
+                <input  class="btn btn-info" id="btnSTR" type="button" name="store" value="STR" onclick="runSTR()">
+               <input  class="btn btn-info" id="btnPlus" type="button" name="plus" value="+" onclick="runPlus()"><br>
+               <input  class="btn btn-info" id="btn4" type="button" name="4" value="4" onclick="run4()">
+               <input  class="btn btn-info" id="btn5" type="button" name="5" value="5" onclick="run5()">
+               <input  class="btn btn-info" id="btn6" type="button" name="6" value="6" onclick="run6()">
+               <input  class="btn btn-info" id="btnClear" type="button" name="clear" value="AC" onclick="runCancel()">
+               <input  class="btn btn-info" id="btnMinus" type="button" name="minus" value="-" onclick="runMinus()"><br>
+               <input  class="btn btn-info" id="btn7" type="button" name="7" value="7" onclick="run7()">
+               <input  class="btn btn-info" id="btn8" type="button" name="8" value="8" onclick="run8()">
+               <input  class="btn btn-info" id="btn9" type="button" name="9" value="9" onclick="run9()">
+               <input  class="btn btn-info" id="btnMRC" type="button" name="recall" value="MRC" onclick="runMRC()">
+               <input  class="btn btn-info" id="btnDivision" type="button" name="divide" value="/" onclick="runDivide()"><br>
+               <input  class="btn btn-info" id="btn0" type="button" name="0" value="0" onclick="run0()">
+               <input  class="btn btn-info" id="btnComma" type="button" name="comma" value="." onclick="runComma()">
+               
+               <input  class="btn btn-info" id="btnEqual" type="button" name="equal" value="=" onclick="runEqual()" accesskey="p">
+               <input  class="btn btn-info" id="btnModulus" type="button" name="equal" value="%" onclick="runModulus()">
+               <input class="btn btn-info" id="btnMultiplication" type="button" name="multiply" value="*" onclick="runProduct()"><br>
+               <input class="btn btn-info" id="btnDoubleZero" type="button" name="doubleZero" value="00" onclick="runDoubleZero()">
+               <input class="btn btn-info" id="btnTripleZero" type="button" name="tripleZero" value="000" onclick="runTripleZero()">
+               <input class="btn btn-info" id="btnRoot" type="button" name="root" value="√" onclick="runRoot()">
+               <input class="btn btn-info" id="btnPI" type="button" name="equal" value="cos" onclick="runCosine()">
+               <input class="btn btn-info" id="btnPI" type="button" name="equal" value="sin" onclick="runSine()"><br>
+               <input class="btn btn-info" id="btnPI" type="button" name="equal" value="xª" onclick="runPowerN()">
+               <input class="btn btn-info" id="btnPI" type="button" name="equal" value="x²" onclick="runPower2()">
+               <input class="btn btn-info" id="btnPower" type="button" name="power3" value="x³" onclick="runPower3()">
+               <input class="btn btn-info" id="btnPI" type="button" name="equal" value="tan" onclick="runTangent()">
+               <input class="btn btn-info" id="btnAbs" type="button" name="absoluteValue" value="Abs" onclick="runAbs()"><br>               
+               <input class="btn btn-info" id="btnAtan" type="button" name="equal" value="tanˉ¹" onclick="runATangent()">
+               <input class="btn btn-info" id="btnAcos" type="button" name="arccos" value="cosˉ¹" onclick="runACosine()">
+               <input class="btn btn-info" id="btnAsin" type="button" name="arcsin" value="sinˉ¹" onclick="runASine()">
+               <input class="btn btn-info" id="btnPI" type="button" name="equal" value="π" onclick="runPI()">
+               <input class="btn btn-info" type="button" name="exponent" value="eª" onclick="runExponent()"><br>
+               <input class="btn btn-info" type="button" name="op" value="(" onclick="runOpeningP()">
+               <input class="btn btn-info" type="button" name="cp" value=")" onclick="runClosingP()">
+               <input class="btn btn-info" type="button" name="e" value="E" onclick="runLin()">
+               <input class="btn btn-info" id="btnScience" type="button" name="scientific" value="ϰ10ª" onclick="runScience()">
+               <input class="btn btn-info" type="button" name="del" value="C" onclick="runClear()"><br>
+
+
+
+
+
+
+
+           </form>
+          </div>
+     </div>	
+     
+
+</body>
+
+</html>
+
+<!--This calculator is a product of code learning project by Blessing Tayedzerwa
+     Feel free to edit it to what ever extent, on the condition that, this comment
+     will not be removed in any version of the calculator.
+     copyright © of SoloLearn 2017 
+-->
